@@ -4,8 +4,6 @@
 
 一套最基础的 React16.x + React-Router-DOM5.x + Webpack4.x 的开发模板，已集成开发环境和生产环境的基本配置。
 
-## MdEditor的功能列表演示
-
 ### 安装依赖
 
 `yarn` or `npm i`
