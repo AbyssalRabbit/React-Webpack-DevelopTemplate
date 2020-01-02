@@ -38,7 +38,7 @@
         |-- index.jsx   //入口
         |-- assets  //资源文件
         |   |-- img
-        |-- components
+        |-- components  //组件库
         |   |-- base    //公共组件
         |   |   |-- Router
         |   |       |-- index.jsx
