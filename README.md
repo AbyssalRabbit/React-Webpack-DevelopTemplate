@@ -2,7 +2,7 @@
 
 **React16.x+Webpack4.x 搭建的开发模板**
 
-一套最基础的 React16.x + React-Router-DOM5.x + Webpack4.x 的开发模板，已集成开发环境和生产环境的基本配置。
+一套最基础的 react16.x + react-router-dom5.x + webpack4.x 的开发模板，已集成开发环境和生产环境的基本配置。
 
 ### 安装依赖
 
