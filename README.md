@@ -12,6 +12,8 @@
 
 `yarn dev` or `npm run dev`
 
+默认访问地址：<http://localhost:8080/>
+
 ### 生产环境打包
 
 `yarn build:prod` or `npm run build:prod`
