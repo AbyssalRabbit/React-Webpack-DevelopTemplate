@@ -2,3 +2,4 @@ node_modules
 dist
 yarn.lock
 directoryList.md
+yarn-error.log
