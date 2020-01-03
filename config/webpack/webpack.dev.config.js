@@ -11,6 +11,20 @@ module.exports = webpackMerge(baseWebpackConfig, {
     output: {
         path: path.resolve(__dirname, "../../dist/dev")
     },
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                enforce: "pre", // 优先处理
+                exclude: /node_modules/, // 不检测的文件
+                loader: 'eslint-loader',
+                options: {
+                    fix: true,  //自动修复
+                    emitWarning: true,  //热加载允许编译通过
+                },
+            }
+        ]
+    },
     // 插件
     plugins: [
         new HtmlWebpackPlugin({

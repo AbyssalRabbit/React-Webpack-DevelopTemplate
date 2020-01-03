@@ -1,7 +1,7 @@
-import React from 'react'
-import { HashRouter, Route, Switch } from 'react-router-dom'
-import Home from '../../../pages/home'
-import Navigation from '../../../pages/navigation'
+import React from 'react';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import Home from '../../pages/Home';
+import Navigation from '../../pages/Navigation';
 
 const Index = () => (
     <HashRouter>

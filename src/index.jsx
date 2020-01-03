@@ -1,6 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Router from './components/base/Router'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Router from './components/Router';
 
 ReactDOM.render(
     <Router />,

@@ -1,6 +1,6 @@
-import React from 'react'
-import ShowText from '../../components/home/ShowText'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import ShowText from './ShowText';
+import { Link } from 'react-router-dom';
 
 class Index extends React.Component {
     render() {
@@ -15,4 +15,4 @@ class Index extends React.Component {
     }
 }
 
-export default Index
+export default Index;

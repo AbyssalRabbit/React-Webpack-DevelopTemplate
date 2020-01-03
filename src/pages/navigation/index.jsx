@@ -1,23 +1,22 @@
-import React, { PureComponent } from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
 
-export class Index extends PureComponent {
-    linkToUrl(url) {
-        this.props.history.push(url)
-    }
+function Index() {
+    const history = useHistory();   //Hooks
+    const linkToUrl = (url) => {
+        history.push(url);
+    };
 
-    render() {
-        return (
+    return (
+        <div>
             <div>
-                <div>
-                    <Link to="/home">link to home</Link>
-                </div>
-                <div>
-                    <button onClick={this.linkToUrl.bind(this, 'home')}>home</button>
-                </div>
+                <Link to="/home">link to home</Link>
             </div>
-        )
-    }
+            <div>
+                <button onClick={()=>linkToUrl('home')}>home</button>
+            </div>
+        </div>
+    );
 }
 
-export default withRouter(Index)
+export default Index;
