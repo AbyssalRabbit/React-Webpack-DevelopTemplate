@@ -42,7 +42,7 @@ module.exports = webpackMerge(baseWebpackConfig, {
      * https://www.webpackjs.com/configuration/dev-server/
      */
     devServer: {
-        port: 8080, //默认端口8080
+        port: 18080, //默认端口8080
         host: '0.0.0.0',    //默认是 localhost。如果你希望服务器外部可访问，指定：0.0.0.0
         disableHostCheck: true, //默认只接受来自本地的请求，关闭后(true)可以接受来自任何 HOST 的请求
         publicPath: '/',    //此路径下的打包文件可在浏览器中访问

@@ -3,6 +3,8 @@ const baseWebpackConfig = require("./webpack.base.config")
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const webpack = require("webpack")
+const ProgressBarPlugin = require('progress-bar-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = webpackMerge(baseWebpackConfig, {
     devtool: 'cheap-module-source-map', //生产环境推荐
@@ -29,6 +31,11 @@ module.exports = webpackMerge(baseWebpackConfig, {
         }),
         new webpack.DefinePlugin({
             $ENVIRONMENT: JSON.stringify('production'),  //全局变量
+        }),
+        new ProgressBarPlugin(),
+        new BundleAnalyzerPlugin({
+            analyzerMode: 'server', //默认打开地址 127.0.0.1:8888
+            openAnalyzer: true,    //Default: true 自动在浏览器打开报表
         })
     ],
 })
